@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o número que estou pensando!</button>
+
+<script>
+ 	var segredo = 8;
+	var input = document.querySelector("input");
+
+	function verifica() {
+
+	    if(segredo == input.value) {
+	        alert("Parabéns! Você acertou o número secreto");
+	    }
+	    else {
+	        alert("Infelizmente você errou!");
+	    }
+	}
+    
+    var button = document.querySelector("button");
+	button.onclick = verifica;
+</script>
